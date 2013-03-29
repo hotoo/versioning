@@ -2,6 +2,7 @@
 # 版本号(version number)
 
 Major_Version_Number.Minor_Version_Number[.Revision_Number[.Build_Number]]
+
 主版本号 . 子版本号 [. 修正版本号 [. 编译版本号 ]]
 
 ## 使用
