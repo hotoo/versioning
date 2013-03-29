@@ -76,12 +76,18 @@ version.eq("6.0", "6"); // true.
 
 除了上面的静态方法， versioning 还可以进行实例化，API 与上面一致。
 
-```
+特殊的，versioning 实例可以使用算术比较运算符，比较两个版本的大小。
+
+注意：使用算术比较运算符，只能比较到子版本号，而且要求子版本号小于 10 的场景。
+
+```javascript
 var version = require("versioning");
 var ver = new version("6.0");
 
 ver.eq(6); // true.
 ver.gte("6.1"); // true.
+
+ver === 6 // true.
 ```
 
 
