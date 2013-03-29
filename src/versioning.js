@@ -14,8 +14,7 @@ define(function(require, exports, module){
   var delimiter = ".";
 
   var Version = function(version){
-    var _version = String(version);
-
+    this._version = String(version);
   };
 
   Version.compare = function(v1, v2){
@@ -69,30 +68,30 @@ define(function(require, exports, module){
     // new Version("6.1").eq(6); // true.
     // new Version("6.1.2").eq("6.1"); // true.
     eq: function(version){
-      Version.eq(_version, version);
+      Version.eq(this._version, version);
     },
 
     gt: function(version){
-      Version.gt(_version, version);
+      Version.gt(this._version, version);
     },
 
     gte: function(version){
-      Version.gte(_version, version);
+      Version.gte(this._version, version);
     },
 
     lt: function(version){
-      Version.lt(_version, version);
+      Version.lt(this._version, version);
     },
 
     lte: function(version){
-      Version.lte(_version, version);
+      Version.lte(this._version, version);
     },
 
     valueOf: function(){
-      return parseFloat(_version.split(".").slice(2).join("."), 10);
+      return parseFloat(this._version.split(".").slice(2).join("."), 10);
     }
-  }
+  };
 
 
-  module.exports = Versioning;
+  module.exports = Version;
 });
