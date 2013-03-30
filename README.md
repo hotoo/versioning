@@ -86,9 +86,10 @@ var version = require("versioning");
 var ver = new version("6.0");
 
 ver.eq(6); // true.
-ver.gte("6.1"); // true.
+ver.gte("5.9"); // true.
 
-ver === 6 // true.
+ver == 6 // true.
+ver > 5.9 // true.
 ```
 
 
