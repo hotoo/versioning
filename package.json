@@ -1,0 +1,22 @@
+{
+    "name": "versioning",
+    "version": "0.1.0",
+    "root": "arale",
+    "description": "",
+    "homepage": "",
+    "author": "",
+    "repository": {
+        "type": "git",
+        "url": ""
+    },
+    "bugs": {
+        "url": ""
+    },
+    "license": "MIT",
+    "dependencies": {
+    },
+    "tests": ["versioning"],
+    "output": {
+        "versioning.js": "."
+    }
+}

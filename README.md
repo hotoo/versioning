@@ -9,8 +9,8 @@ Major_Version_Number.Minor_Version_Number[.Revision_Number[.Build_Number]]
 
 ```javascript
 var version = require("versioning");
-version.compare("6.0", "6"); // true.
-version.eq("6.0", "6"); // true.
+version.compare("6.0", "6"); // 0
+version.eq("6.0", "6"); // true
 ```
 
 ## API
