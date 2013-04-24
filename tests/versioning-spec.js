@@ -1,6 +1,7 @@
 define(function(require) {
 
-  var versioning = require('../src/versioning');
+  var expect = require("expect");
+  var versioning = require('versioning');
 
   describe('versioning', function() {
 
