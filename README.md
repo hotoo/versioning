@@ -1,9 +1,14 @@
-
 # 版本号(version number)
 
-Major_Version_Number.Minor_Version_Number[.Revision_Number[.Build_Number]]
+----
 
-主版本号 . 子版本号 [. 修正版本号 [. 编译版本号 ]]
+语义化版本号比较模块。
+
+语义化版本号通常定义如下：
+
+    Major_Version_Number.Minor_Version_Number[.Revision_Number[.Build_Number]]
+
+    主版本号            .子版本号            [.修正版本号     [.编译版本号  ]]
 
 ## 使用
 
@@ -11,6 +16,10 @@ Major_Version_Number.Minor_Version_Number[.Revision_Number[.Build_Number]]
 var version = require("versioning");
 version.compare("6.0", "6"); // 0
 version.eq("6.0", "6"); // true
+
+var v = new version("6.0");
+v == 6 // true
+v > 6  // false
 ```
 
 ## API
@@ -82,8 +91,9 @@ version.eq("6.0", "6"); // true
 注意：使用算术比较运算符，只能比较到子版本号，而且要求子版本号小于 10 的场景。
 
 ```javascript
-var version = require("versioning");
-var ver = new version("6.0");
+var versioning = require("versioning");
+
+var ver = new versioning("6.0");
 
 ver.eq(6); // true.
 ver.gte("5.9"); // true.
@@ -92,12 +102,16 @@ ver == 6 // true.
 ver > 5.9 // true.
 ```
 
+### 注意
 
-## 参考阅读
+JavaScript 引擎的限制，versioning 实例与字符串相加时，只返回两级版本号。
+要得到完整的原生版本号，需要使用显示转换方式。
 
-* [Semantic Versioning](http://semver.org/)
-* [Apache APR Version Numbering Concepts](http://apr.apache.org/versioning.html)
-* [Version number rules](http://mojo.codehaus.org/versions-maven-plugin/version-rules.html)
-* [软件版本号](http://zh.wikipedia.org/wiki/%E8%BB%9F%E4%BB%B6%E7%89%88%E6%9C%AC%E8%99%9F)
-* [Software versioning](http://en.wikipedia.org/wiki/Software_versioning)
-* [Release Version Numbering](http://openacs.org/doc/eng-standards-versioning.html)
+```javascript
+var v = new versioning("1.2.3.4");
+
+"" + v; // "1.2"
+
+String(v); // "1.2.3.4"
+v.toString(); // "1.2.3.4"
+```
