@@ -2,6 +2,9 @@
 
 ----
 
+[![Build Status](https://secure.travis-ci.org/aralejs/versioning.png?branch=master)](https://travis-ci.org/aralejs/versioning)
+[![Coverage Status](https://coveralls.io/repos/aralejs/versioning/badge.png?branch=master)](https://coveralls.io/r/aralejs/versioning)
+
 语义化版本号比较模块。
 
 语义化版本号通常定义如下：
