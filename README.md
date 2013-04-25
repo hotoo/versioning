@@ -2,8 +2,8 @@
 
 ----
 
-[![Build Status](https://secure.travis-ci.org/aralejs/versioning.png?branch=master)](https://travis-ci.org/aralejs/versioning)
-[![Coverage Status](https://coveralls.io/repos/aralejs/versioning/badge.png?branch=master)](https://coveralls.io/r/aralejs/versioning)
+[![Build Status](https://secure.travis-ci.org/hotoo/versioning.png?branch=master)](https://travis-ci.org/hotoo/versioning)
+[![Coverage Status](https://coveralls.io/repos/hotoo/versioning/badge.png?branch=master)](https://coveralls.io/r/hotoo/versioning)
 
 语义化版本号比较模块。
 
