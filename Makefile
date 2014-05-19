@@ -1,12 +1,14 @@
 version = $(shell cat package.json | grep version | awk -F'"' '{print $$4}')
 
 install:
+	@npm install
 	@spm install
 
 build:
 	@spm build
 
 publish: publish-doc
+	@npm publish
 	@spm publish
 	@git tag $(version)
 	@git push origin $(version)
@@ -26,6 +28,7 @@ clean:
 
 runner = _site/tests/runner.html
 test:
+	@mocha -R spec tests/versioning-spec.js
 	@spm test
 
 output = _site/coverage.html

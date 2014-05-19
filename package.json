@@ -11,12 +11,16 @@
   "bugs": {
       "url": "https://github.com/hotoo/versioning/issues"
   },
-  "license": "MIT",
+  "main": "versioning.js",
+  "devDependencies": {
+    "expect.js": "0.3.1"
+  },
   "spm": {
     "main": "versioning.js",
     "devDependencies": {
       "expect.js": "0.3.1"
     },
     "tests": "tests/*-spec.js"
-  }
+  },
+  "license": "MIT"
 }
