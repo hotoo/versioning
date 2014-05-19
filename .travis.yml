@@ -8,7 +8,6 @@ install:
 
 before_script:
   - node_modules/spm/bin/spm-install
-  - npm install
 
 script:
   - node_modules/spm/bin/spm-test
