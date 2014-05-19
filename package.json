@@ -1,19 +1,22 @@
 {
-    "family": "arale",
-    "name": "versioning",
-    "version": "1.0.0",
-    "description": "Semantic Versioning Number Compare",
-    "homepage": "",
-    "author": "闲耘 <hotoo.cn@gmail.com>",
-    "repository": {
-        "type": "git",
-        "url": "https://github.com/aralejs/versioning"
+  "name": "versioning",
+  "version": "1.1.0",
+  "description": "Semantic Versioning Number Compare",
+  "homepage": "https://github.com/hotoo/versioning",
+  "author": "闲耘 <hotoo.cn@gmail.com>",
+  "repository": {
+      "type": "git",
+      "url": "https://github.com/hotoo/versioning"
+  },
+  "bugs": {
+      "url": "https://github.com/hotoo/versioning/issues"
+  },
+  "license": "MIT",
+  "spm": {
+    "main": "versioning.js",
+    "devDependencies": {
+      "expect.js": "0.3.1"
     },
-    "bugs": {
-        "url": "https://github.com/aralejs/versioning/issues"
-    },
-    "license": "MIT",
-    "spm": {
-      "output": ["versioning.js"]
-    }
+    "tests": "tests/*-spec.js"
+  }
 }

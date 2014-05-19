@@ -3,7 +3,7 @@
 ---
 
 ````javascript
-seajs.use('versioning', function(versioning){
+seajs.use('../versioning', function(versioning){
 
     console.log(versioning.compare("6.0", "6")); // 0
     console.log(versioning.compare("6.1", "6")); // 1
