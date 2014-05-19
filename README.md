@@ -2,6 +2,8 @@
 
 ----
 
+[![NPM version](https://badge.fury.io/js/versioning.png)](http://badge.fury.io/js/versioning)
+[![spm package](http://spmjs.io/badge/versioning)](http://spmjs.io/package/versioning)
 [![Build Status](https://secure.travis-ci.org/hotoo/versioning.png?branch=master)](https://travis-ci.org/hotoo/versioning)
 [![Coverage Status](https://coveralls.io/repos/hotoo/versioning/badge.png?branch=master)](https://coveralls.io/r/hotoo/versioning)
 
@@ -9,9 +11,11 @@
 
 语义化版本号通常定义如下：
 
-    Major_Version_Number.Minor_Version_Number[.Revision_Number[.Build_Number]]
+```
+Major_Version_Number.Minor_Version_Number[.Revision_Number[.Build_Number]]
 
-    主版本号            .子版本号            [.修正版本号     [.编译版本号  ]]
+主版本号            .子版本号            [.修正版本号     [.编译版本号  ]]
+```
 
 ## 使用
 
