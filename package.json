@@ -3,6 +3,7 @@
   "version": "1.1.0",
   "description": "Semantic Versioning Number Compare",
   "homepage": "https://github.com/hotoo/versioning",
+  "keywords": ["version", "package", "compare"],
   "author": "闲耘 <hotoo.cn@gmail.com>",
   "repository": {
       "type": "git",
@@ -18,7 +19,8 @@
   "spm": {
     "main": "versioning.js",
     "devDependencies": {
-      "expect.js": "0.3.1"
+      "expect.js": "0.3.1",
+      "jquery": "1.7.2"
     },
     "tests": "tests/*-spec.js"
   },
