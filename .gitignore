@@ -3,3 +3,4 @@ _site
 .cache/
 dist/
 sea-modules/
+node_modules/
