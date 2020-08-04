@@ -1,6 +1,6 @@
 {
   "name": "versioning",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "main": "versioning.js",
   "description": "Semantic Versioning Number Compare",
   "homepage": "https://github.com/hotoo/versioning",

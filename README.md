@@ -1,11 +1,18 @@
-# 版本号(version number)
+# 版本号 (version number)
 
 ----
 
-[![NPM version](https://badge.fury.io/js/versioning.png)](http://badge.fury.io/js/versioning)
-[![spm package](http://spmjs.io/badge/versioning)](http://spmjs.io/package/versioning)
-[![Build Status](https://secure.travis-ci.org/hotoo/versioning.png?branch=master)](https://travis-ci.org/hotoo/versioning)
-[![Coverage Status](https://coveralls.io/repos/hotoo/versioning/badge.png?branch=master)](https://coveralls.io/r/hotoo/versioning)
+[![NPM version][npm-badge]][npm-url]
+[![Build Status][travis-badge]][travis-url]
+[![Coverage Status][coveralls-badge]][coveralls-url]
+
+[npm-badge]: https://img.shields.io/npm/v/versioning.svg?style=flat
+[npm-url]: https://www.npmjs.com/package/versioning
+[travis-badge]: https://travis-ci.org/hotoo/versioning.svg?branch=master
+[travis-url]: https://travis-ci.org/hotoo/versioning
+[coveralls-badge]: https://coveralls.io/repos/hotoo/versioning/badge.svg?branch=master
+[coveralls-url]: https://coveralls.io/r/hotoo/versioning
+
 
 语义化版本号比较模块。
 
