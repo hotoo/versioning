@@ -1,4 +1,4 @@
-version = $(shell cat package.json | grep version | awk -F'"' '{print $$4}')
+version = $(shell cat package.json | grep '"version"' | awk -F'"' '{print $$4}')
 
 install:
 	@npm install
