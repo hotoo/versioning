@@ -4,3 +4,5 @@ _site
 dist/
 sea-modules/
 node_modules/
+.nyc_output/
+coverage/
