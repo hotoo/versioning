@@ -10,7 +10,7 @@ before_script:
   - npm install
 
 script:
-  - npm run test
+  - npm run cov
 
 after_success:
-  - npm run cov | node_modules/.bin/coveralls
+  - cat coverage/lcov.info | node_modules/.bin/coveralls
