@@ -44,8 +44,8 @@ Version.compare = function(v1, v2){
  *    Version.eq("6.1", "6"); // true.
  *    Version.eq("6.1.2", "6.1"); // true.
  */
-Version.eq = function(v1, v2){
-  return compare(v1, v2, false) === 0;
+Version.eq = function(v1, v2, strict){
+  return compare(v1, v2, strict) === 0;
 };
 
 /**
@@ -94,7 +94,7 @@ Version.prototype = {
 
   valueOf: function(){
     return parseFloat(
-      this._version.split(delimiter).slice(0,2).join(delimiter),
+      this._version.split(delimiter).slice(0, 2).join(delimiter),
       10);
   },
 
@@ -105,8 +105,8 @@ Version.prototype = {
    * @return {String}
    */
   toString: function(precision){
-    return "undefined"===typeof precision ? this._version :
-      this._version.split(delimiter).slice(0,precision).join(delimiter);
+    return "undefined" === typeof precision ? this._version :
+      this._version.split(delimiter).slice(0, precision).join(delimiter);
   }
 };
 

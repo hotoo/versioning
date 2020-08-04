@@ -14,6 +14,8 @@ describe('versioning', function() {
   it("versioning.eq(v1, v2)", function() {
     expect(versioning.eq("6.0", 6)).to.equal(true);
     expect(versioning.eq("6.0", "6")).to.equal(true);
+    expect(versioning.eq("6.1", "6")).to.equal(true);
+    expect(versioning.eq("6.1", "6", true)).to.equal(false);
   });
 
   it("versioning.gt(v1, v2)", function(){
@@ -140,6 +142,9 @@ describe('versioning', function() {
 
     expect(typeof ver.toString()).to.equal("string");
     expect(ver.toString()).to.equal("6.0");
+    expect(ver.toString(1)).to.equal("6");
+    expect(ver.toString(2)).to.equal("6.0");
+    expect(ver.toString(3)).to.equal("6.0");
 
     expect(typeof String(ver)).to.equal("string");
     expect(String(ver)).to.equal("6.0");

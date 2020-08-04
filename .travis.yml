@@ -1,18 +1,16 @@
 language: node_js
 
 node_js:
-  - "0.10"
+  - "10.0"
 
 install:
-  - npm install spm@ninja coveralls mocha
+  - npm install coveralls
 
 before_script:
   - npm install
-  - node_modules/spm/bin/spm-install
 
 script:
-  - node_modules/.bin/mocha -R spec tests/versioning-spec.js
-  - node_modules/spm/bin/spm-test
+  - npm run test
 
 after_success:
-  - node_modules/spm/bin/spm-test --coveralls | node_modules/.bin/coveralls
+  - npm run cov | node_modules/.bin/coveralls

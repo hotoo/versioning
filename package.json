@@ -1,28 +1,30 @@
 {
   "name": "versioning",
   "version": "1.1.0",
+  "main": "versioning.js",
   "description": "Semantic Versioning Number Compare",
   "homepage": "https://github.com/hotoo/versioning",
-  "keywords": ["version", "package", "compare"],
+  "keywords": [
+    "version",
+    "package",
+    "compare"
+  ],
   "author": "闲耘 <hotoo.cn@gmail.com>",
   "repository": {
-      "type": "git",
-      "url": "https://github.com/hotoo/versioning"
+    "type": "git",
+    "url": "https://github.com/hotoo/versioning"
   },
   "bugs": {
-      "url": "https://github.com/hotoo/versioning/issues"
+    "url": "https://github.com/hotoo/versioning/issues"
   },
-  "main": "versioning.js",
+  "scripts": {
+    "test": "mocha -R spec tests/versioning-spec.js",
+    "cov": "nyc --reporter=lcov --reporter=text-summary npm run test"
+  },
   "devDependencies": {
-    "expect.js": "0.3.1"
-  },
-  "spm": {
-    "main": "versioning.js",
-    "devDependencies": {
-      "expect.js": "0.3.1",
-      "jquery": "1.7.2"
-    },
-    "tests": "tests/*-spec.js"
+    "expect.js": "0.3.1",
+    "mocha": "^8.1.0",
+    "nyc": "^15.1.0"
   },
   "license": "MIT"
 }
